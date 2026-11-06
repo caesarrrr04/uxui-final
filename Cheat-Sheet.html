@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UX/UI Cheat-Sheet — Ch 2,3,4,5,8,9</title>
+<style>
+body{font-family:-apple-system,"Segoe UI","Sarabun","Thonburi",sans-serif;margin:0;background:#f6f7fb;color:#1d2330;line-height:1.5;font-size:14px}
+header{background:#1f3a8a;color:#fff;padding:14px 18px}header h1{margin:0;font-size:20px}header p{margin:4px 0 0;opacity:.85;font-size:12.5px}
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px;padding:12px}
+.c{background:#fff;border-radius:10px;padding:10px 14px;box-shadow:0 1px 3px #0002;break-inside:avoid}
+.c h2{margin:0 0 6px;font-size:15.5px;color:#1f3a8a;border-bottom:2px solid #e3e8f7;padding-bottom:3px}
+.c h3{margin:8px 0 2px;font-size:13.5px;color:#7a2e8a}
+ul,ol{margin:2px 0 4px 18px;padding:0}li{margin:1px 0}
+b{color:#0b1f5c}.t{color:#b3261e;font-weight:600}.k{background:#fff3c4;padding:0 3px;border-radius:3px}
+table{border-collapse:collapse;width:100%;font-size:12.5px;margin:4px 0}td,th{border:1px solid #d5dbea;padding:3px 5px;vertical-align:top}th{background:#eef2fb}
+.ch{display:inline-block;background:#1f3a8a;color:#fff;border-radius:4px;padding:0 6px;font-size:12px;margin-right:4px}
+@media print{body{background:#fff;font-size:10.5px}main{grid-template-columns:1fr 1fr;gap:6px;padding:0}.c{box-shadow:none;border:1px solid #ccc;padding:5px 8px}header{padding:6px}}
+</style></head><body>
+<header><h1>UX/UI Cheat-Sheet: 6 บทที่ออกสอบ (Ch 2, 3, 4, 5, 8, 9)</h1>
+<p>สรุปจากสไลด์ของคอร์สเท่านั้น · <span class="t">แดง</span> = กับดักที่ข้อสอบชอบถาม · ศัพท์คงภาษาอังกฤษตามสไลด์ · อ้างอิงเป็น ChX pY</p></header>
+<main>
+
+<section class="c"><h2><span class="ch">Ch2</span>Psychology in UX/UI: ภาพรวม</h2>
+<p><b>Core 7 หัวข้อ</b>: Cognitive · Design Laws · Mental Model · Serial Position Effect · Principles of Least Effort · Gestalt Theory · Color Psychology (p2)</p>
+<h3>Cognitive Psychology (p3–4)</h3>
+<ul><li>สมอง = "คอมพิวเตอร์": <b>Input → Process (จัดเก็บ) → Output (พฤติกรรม)</b></li>
+<li>4 กลไก: <b>Perception · Memory · Language · Problem Solving &amp; Decision Making</b></li></ul>
+<h3>Perception 3 ขั้น (p5)</h3>
+<ol><li><b>Selection</b>: เลือกสนใจเฉพาะสิ่งเร้าสำคัญ</li><li><b>Organization</b>: จัดกลุ่มตามความคล้าย/ความใกล้ (Gestalt)</li><li><b>Interpretation</b>: ใช้ประสบการณ์เดิมตีความ (Affordance)</li></ol>
+<h3>Selection (p7–8)</h3>
+<ul><li><b>Selective Attention</b>: สนใจสิ่งที่เด่น (เสียงดัง สีสด เคลื่อนไหว)</li><li><b>Motivation &amp; Need</b>: หิว → เห็นป้ายร้านอาหารเร็ว</li>
+<li>เทคนิค: Action Contrast · White Space · Chunking · Visual Hierarchy · ระวัง <b>Banner Blindness</b> (UI ที่ดูเหมือนโฆษณาจะถูกเมิน)</li></ul>
+</section>
+
+<section class="c"><h2><span class="ch">Ch2</span>Dark Patterns 13 แบบ (p9–24)</h2>
+<p>จงใจ/บีบให้ผู้ใช้ทำสิ่งที่ไม่ได้ตั้งใจ: marketing มองว่ากระตุ้นยอดขาย แต่ UX มองว่า <b>unethical</b></p>
+<table><tr><th>ชื่อ</th><th>จำง่าย ๆ</th></tr>
+<tr><td>False Urgency</td><td>Countdown, "Only 2 left"</td></tr>
+<tr><td>Basket Sneaking</td><td>แอบใส่ของ/ประกันลงตะกร้า (ติ๊ก default)</td></tr>
+<tr><td>Confirm Shaming</td><td>ปุ่มปฏิเสธทำให้รู้สึกผิด "ไม่ ฉันยอมจ่ายแพงกว่า"</td></tr>
+<tr><td>Forced Action</td><td>Forced Registration / Continuity / Choice / subscribe</td></tr>
+<tr><td>Subscription Trap</td><td>free trial → ต่ออายุอัตโนมัติ (ตัวเล็ก ๆ)</td></tr>
+<tr><td>Interface Interference</td><td>ซ่อนปุ่ม X, Asymmetric Design (ปุ่ม Accept เด่น ปุ่ม Reject ซีด)</td></tr>
+<tr><td>Bait &amp; Switch</td><td>ลด 90% กดแล้วไม่มีของ, Function Hijacking</td></tr>
+<tr><td>Drip Pricing</td><td>ราคาเริ่มถูก แล้วค่อย ๆ บวกค่าธรรมเนียมตอน checkout</td></tr>
+<tr><td>Disguised Advertisement</td><td>โฆษณาเนียนเป็นเนื้อหา/ปุ่ม</td></tr>
+<tr><td>Nagging</td><td>แจ้งเตือน/ป๊อปอัปซ้ำจนผู้ใช้ยอม</td></tr>
+<tr><td>Trick Question</td><td>"ไม่ต้องการรับข่าวสารใช่หรือไม่?" สับขาหลอก</td></tr>
+<tr><td>SaaS Billing</td><td><b>Roach Motel</b>: สมัคร 1 คลิก ยกเลิกยาก/ต้องผ่านเว็บ</td></tr>
+<tr><td>Rogue Malware</td><td>หลอกให้ติดตั้งซอฟต์แวร์อันตราย</td></tr></table>
+<p class="t">กับดัก: Basket Sneaking (ใส่ของเพิ่ม) ≠ Drip Pricing (บวกค่าธรรมเนียมทีละขั้น) ≠ Subscription Trap (ผูกรายเดือน)</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch2</span>Motivation, Maslow, Selective Perception</h2>
+<ul><li><b>Extrinsic</b> = ใช้เพราะสิ่งตอบแทน (Points, Discounts, Rewards) · <b>Intrinsic</b> = ใช้เพราะพอใจ (Fun, Connection, Community) (p25)</li></ul>
+<h3>Maslow's Hierarchy (ฉบับ UX, p26) ล่าง→บน</h3>
+<ol><li><b>Functional</b>: ทำงานได้จริง, No bugs</li><li><b>Reliability</b>: โหลดเร็ว ปลอดภัย พร้อมใช้, cancel/undo ได้</li><li><b>Usability</b>: ใช้ง่าย, F/Z pattern</li><li><b>Convenience</b>: ลดขั้นตอน ประหยัดเวลา</li><li><b>Pleasurable</b>: UI สวย interaction ดี น่าประทับใจ</li></ol>
+<h3>Selective Perception 4 (p27–35)</h3>
+<table><tr><th>ประเภท</th><th>เทคนิค/ตัวอย่าง</th></tr>
+<tr><td>Selective <b>Exposure</b> (เลือกเปิดรับ)</td><td>Progressive Disclosure, Personalization, Visual Hierarchy, Relevancy · Netflix/Spotify dashboard, Notification Control</td></tr>
+<tr><td>Selective <b>Attention</b> (เลือกสนใจ)</td><td>Visual Hierarchy, Reduce Cognitive Load, Whitespace, เลี่ยง Banner Blindness · จุดแดงบนไอคอน, Overlay ป๊อปอัป, <b>Invisible Gorilla</b> (Chabris &amp; Simons 1999) → <b>Inattentional Blindness</b></td></tr>
+<tr><td>Selective <b>Comprehension</b> (เลือกตีความ)</td><td>"Error Code: 404" → เปลี่ยนเป็น "ขออภัย ไม่พบหน้านี้ กรุณาลองใหม่"</td></tr>
+<tr><td>Selective <b>Retention</b> (เลือกจดจำ)</td><td>scan &amp; skip, memorable experience, contrast · Tutorial 5–6 หน้าถูก Skip → ใช้ <b>Contextual Hints</b></td></tr></table>
+</section>
+
+<section class="c"><h2><span class="ch">Ch2</span>Organization, Interpretation, Cognitive Load</h2>
+<h3>Gestalt Theory (p37): มองภาพรวมมากกว่าส่วนย่อย</h3>
+<ul><li>5 กฎ: <b>Proximity</b> (ใกล้ชิด) · <b>Closure</b> (สิ้นสุด/เติมเต็ม) · <b>Similarity</b> (คล้าย) · <b>Continuation</b> (ต่อเนื่อง) · <b>Prägnanz</b> (ชัดเจน/เรียบง่าย)</li>
+<li><b>Reproductive</b> = ใช้ความรู้เดิมแก้ปัญหาใหม่ · <b>Productive</b> = สร้างความรู้ใหม่ตามสถานการณ์</li></ul>
+<h3>Affordance 6 ประเภท (p39): มองแล้วรู้ว่าต้องทำอะไร</h3>
+<ul><li><b>Pattern</b>: ธรรมเนียมจนคุ้นเคย (ลิงก์ขีดเส้นใต้)</li><li><b>Explicit</b>: บอกชัดด้วยข้อความ/รูปทรง ("Buy Now")</li><li><b>False</b>: ดูเหมือนกดได้แต่ทำอย่างอื่น/ไม่ได้</li><li><b>Metaphorical</b>: เลียนแบบของจริง (ถังขยะ, แผ่นดิสก์)</li><li><b>Hidden</b>: โผล่เมื่อต้องการ (hover menu)</li><li><b>Negative</b>: ดูเหมือน inactive แต่ active</li></ul>
+<h3>Cognitive Load 3 ประเภท (p41)</h3>
+<ul><li><b>Intrinsic</b>: ความยากโดยธรรมชาติของงาน (coding)</li><li><b>Extraneous</b>: ภาระส่วนเกินจากการนำเสนอไม่ดี (หน้าเว็บสับสน) ← ดีไซเนอร์ต้องลด</li><li><b>Germane</b>: ภาระที่มีประโยชน์ เชื่อมความรู้เดิมกับใหม่</li></ul>
+<p><b>Cognitive Overload</b> (เมนูข้อมูลเยอะ) ป้องกัน 5 ข้อ: Less is more · Chunking · Progress Indicators · Image Identifying · Familiarity (p43)</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch2</span>Design Laws 6 ข้อ (p45–68)</h2>
+<table><tr><th>Law</th><th>แก่นแท้</th><th>ใช้/ตัวอย่าง</th></tr>
+<tr><td><b>Hick's</b></td><td>เวลาตัดสินใจ ↑ ตาม <b>จำนวน+ความซับซ้อนของตัวเลือก</b> (เน้น "ความคิด")</td><td>ลดตัวเลือก, Categorization, Progressive Disclosure/step-by-step form, Spotify nav</td></tr>
+<tr><td><b>Fitts's</b></td><td>เวลาไปถึงเป้า ขึ้นกับ <b>size + distance</b> (เน้น "การเคลื่อนไหว")</td><td>CTA ใหญ่, วางที่ขอบ/มุมจอ, Spacebar ใหญ่, ปุ่ม Delete เล็ก+ไกล, thumb zone</td></tr>
+<tr><td><b>Miller's</b></td><td>ความจำระยะสั้น <b>7 ± 2</b> (5–9) ชิ้น · Cognitive Limitation</td><td>Chunking, เมนูหลัก ≤ 7, แบ่งฟอร์ม</td></tr>
+<tr><td><b>Jakob's</b></td><td>ผู้ใช้คาดหวังให้เว็บเราทำงานเหมือนเว็บอื่นที่คุ้นเคย (<b>Familiarity Breeds Intuition</b>)</td><td>ตะกร้ามุมขวาบน, ตัวอย่างการขับรถยี่ห้อใหม่ · หลักสำคัญ = <b>Mental Models</b></td></tr>
+<tr><td><b>Parkinson's</b></td><td>งานขยายตัวจนเต็มเวลาที่มี (Focus on Essential/Process)</td><td>Autofill, แบ่งฟอร์มสั้น, ตัดฟิลด์ไม่จำเป็น · กราฟ effort: เวลาน้อย=พยายามมาก, มีจุด best time</td></tr>
+<tr><td><b>Tesler's</b></td><td>ความซับซ้อนกำจัดไม่ได้ (Conservation of Complexity) ทำได้แค่ <b>ย้ายว่าใครรับ</b></td><td>ให้ระบบรับแทนผู้ใช้: Uber คำนวณเส้นทาง/ราคา, Grab จำที่อยู่, จำรหัสผ่าน</td></tr></table>
+<p class="t">กับดัก: Hick = จำนวนตัวเลือก/การตัดสินใจ · Fitts = ขนาด/ระยะ · Miller = ความจำ · Tesler = ย้ายความซับซ้อน · Parkinson = เวลา/ขั้นตอน</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch2</span>Mental Model, Serial Position, Least Effort</h2>
+<h3>Mental Models 3 แบบ (p71)</h3>
+<ul><li><b>User Mental Model</b>: ผู้ใช้คาดว่าระบบทำงานอย่างไร (จากประสบการณ์)</li><li><b>System/Implementation Model</b>: ระบบทำงานจริงตาม code/database</li><li><b>Designer's Conceptual Model</b>: <b>สะพาน</b>ที่ดีไซเนอร์สร้างให้ UI ตรงกับความคิดผู้ใช้</li></ul>
+<p><b>Thinking &amp; Decision Making</b> (p72): <b>System 1</b> = สัญชาตญาณ เร็ว อัตโนมัติ ใช้อารมณ์ · <b>System 2</b> = วิเคราะห์ ช้า ใช้เหตุผล</p>
+<p><b>Decision Matrix</b> (p73–74): คะแนน = W (น้ำหนัก) × S (คะแนนดิบ) รวมกัน → Tablet 51, Mobile 56, <b>Barcode gun 65</b> (ชนะ)</p>
+<h3>Serial Position Effect (p76–77)</h3>
+<ul><li>จำ "ตัวแรก" และ "ตัวสุดท้าย" ได้ดี ตรงกลางลืม</li><li><b>Primacy</b> = จำตัวแรก → <b>Long-term Memory</b> · <b>Recency</b> = จำตัวท้าย → <b>Short-term Memory</b></li><li>ใช้: ของสำคัญไว้หัว/ท้ายเมนู · pricing: ถูกสุดไว้แรก แนะนำไว้ท้าย</li></ul>
+<h3>Von Restorff / Isolation Effect (p78–79)</h3>
+<p>สิ่งที่แปลกแยกจะถูกจำ (Pattern Recognition → Break the Pattern) · <span class="t">อย่าทำให้เด่นทุกอย่าง</span> · 5 วิธี: <b>Perceptual</b> (สี/ขนาด, นิยมที่สุด) · <b>Conceptual/Semantic</b> (ความหมาย: เงาะ ส้ม <u>กางเกง</u>) · <b>Spatial</b> (white space) · <b>Sequential</b> (ลำดับเวลา/ผิดจังหวะ) · <b>Counter</b> (เหนือความคาดหมาย)</p>
+<h3>Principles of Least Effort (p81–83)</h3>
+<p>มนุษย์เลือกทางที่ใช้แรงน้อยสุด · 3 องค์ประกอบ: <b>acceptance · responsibility · defenselessness</b> · ทำ <b>Minimize Interaction Cost</b>: Auto-fill, login with Google/Apple, predictive text</p>
+<p><b>Psychologist vs UX Designer</b> (p84–89): เชื่อมกันด้วย <b>Empathy</b>; UX ใช้ Cognitive Psychology ทำ Wireframes/Prototypes/ทดสอบ</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch3</span>Problem Statement (p2–8)</h2>
+<ul><li>3 องค์ประกอบ: <b>Current State</b> (ปัญหา+หลักฐาน/ตัวเลข) · <b>Desired State</b> (เป้าหมาย) · <b>Impact</b> (ไม่แก้แล้วเสียอะไร)</li>
+<li class="t">ห้ามใส่วิธีแก้ (solution) · เน้น "ปัญหา" ไม่ใช่ "ทางออก" · ใช้ข้อมูลและตัวเลข</li>
+<li>ระบุ <b>User Insight &amp; Pain Point</b> (จาก User Research/Usability Test/Analytics) และ <b>Emotional Impact</b></li>
+<li>เทคนิค <b>5W1H</b>: Who · What · Where · When · Why · How</li>
+<li>ตัวอย่างดี: "ลูกค้า 30% ทิ้งตะกร้าที่หน้าชำระเงินเพราะโหลด &gt;10 วินาที เสีย 500,000 บาท/เดือน"</li></ul>
+</section>
+
+<section class="c"><h2><span class="ch">Ch3</span>User Persona &amp; Empathy Map (p13–18)</h2>
+<ul><li><b>Persona</b> = "บุคคลสมมุติ" ที่<b>อ้างอิงข้อมูลจริง</b></li><li>ประโยชน์: เข้าใจลึก ออกแบบตรงจุด · สื่อสารตรงเป้า · ประหยัดงบ (scope down) · ทีมไปทิศทางเดียวกัน</li>
+<li>ข้อมูล: ใคร (demographic) · หมวดหมู่ · ความต้องการ · ปัญหา · ความชอบ · พฤติกรรม · ความคาดหวัง · ช่องทาง · ปัจจัย · การปฏิเสธ</li></ul>
+<p><b>Persona Process</b>: Data Gathering (Interviews, Questionnaire, Surveys, Observation) → Analysis &amp; Synthesis (Pain points, Goals, Behaviors) → Persona Creation (General details, Personality, Needs, Pain points, Behavior when use)</p>
+<p><b>Empathy Map</b>: Think · Say · Does · Feel (รอบ User) + Pain points · Needs · Goals (เครื่องมือ Design Thinking "เอาใจเขามาใส่ใจเรา")</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch3</span>User Journey Map (p9–36)</h2>
+<p><b>Persona → Process → Action → Emotion/Pain points → Idea/Impact</b></p>
+<ul><li><b>Process</b>: Before (ก่อนเข้าถึง/เป้าหมาย) · During (ทำภารกิจ) · After (ความรู้สึกเมื่อจบ)</li>
+<li><b>Stage of Process</b>: Scenario (<b>Actor</b>=persona, <b>Trigger</b>=เหตุที่เข้ามาใช้, <b>Environment</b>=บริบท), Conceptual scenario, User Steps/Stages, Goals</li>
+<li><b>Action</b>: User Behavior · Difficulty · <b>Awareness</b> (เริ่มรู้ว่ามีปัญหา) · <b>Consideration</b> (เปรียบเทียบตัวเลือก)</li>
+<li><b>Emotion</b> (Don Norman Emotional Design): <b>Visceral</b> (แรกเห็น) · <b>Behavioral</b> (ตอนใช้งาน) · <b>Reflective</b> (หลังใช้/ความภูมิใจ ภักดี)</li>
+<li><b>Pain point 4</b>: <b>Productivity</b> (เสียเวลา กรอกซ้ำ) · <b>Support</b> (ข้อมูล/ช่วยเหลือไม่ชัด, error ไม่บอกวิธีแก้) · <b>Process</b> (ขั้นตอนซับซ้อน, บังคับ sign up; แก้ด้วย scenario &amp; task analysis) · <b>Design</b> (contrast แย่, ปุ่มเล็กชิด, icon ไม่สื่อ)</li>
+<li>เครื่องมือหา pain point: Empathy Map · Customer Journey · Usability Test</li>
+<li><b>Idea/Impact</b>: Personalization · Micro-interactions · Frictionless Flow · Accessibility</li></ul>
+</section>
+
+<section class="c"><h2><span class="ch">Ch4</span>Ethics: Review Types &amp; Rules (p3–18)</h2>
+<ul><li>ผู้วิจัยต้องมี certificate อบรมจริยธรรม · <b>ไม่หมดอายุในอีก 6 เดือน</b> · ยื่นขอรับรอง <b>ก่อนเก็บข้อมูลอย่างน้อย 3 เดือน</b> · <span class="t">ขอย้อนหลังไม่ได้</span></li></ul>
+<table><tr><th>Type</th><th>Risk</th><th>วิธีพิจารณา</th><th>ตัวอย่าง</th></tr>
+<tr><td>Not Subject to Review</td><td>ไม่เกี่ยวกับมนุษย์โดยตรง</td><td>ไม่ต้องยื่น</td><td>ข้อมูลสาธารณะไม่ระบุตัว, งานภายใน, การสอนปกติ</td></tr>
+<tr><td><b>Exemption</b></td><td>ไม่มี/ต่ำมาก</td><td>ประธาน/เลขาฯ ตรวจ ออกใบยกเว้น (<span class="t">ยกเว้นตัวเองไม่ได้ ต้องยื่น</span>)</td><td>แบบสอบถามพึงพอใจไม่ระบุชื่อ</td></tr>
+<tr><td><b>Expedited</b></td><td>ต่ำ</td><td>กรรมการ 2–3 ท่าน ออนไลน์</td><td>เจาะเลือดน้อย, น้ำลาย, สัมภาษณ์ไม่กระทบใจ, แก้ไขโครงร่างเล็กน้อย</td></tr>
+<tr><td><b>Full Board</b></td><td>สูง/กลุ่มเปราะบาง</td><td>ประชุมใหญ่ลงมติ</td><td>ยาใหม่, ผ่าตัด, เด็ก, จิตเวช</td></tr></table>
+<p class="t">ห้ามขอ Exempt: กลุ่มเปราะบาง · มีการปกปิด/หลอกลวง · ความเสี่ยงสูง/รุกล้ำร่างกาย</p>
+<p>Flow (KRIS): ผู้วิจัยยื่น → เจ้าหน้าที่ตรวจเอกสาร → ครบ: ลงรับ/เลขโครงการ → ประธานกำหนดวิธี (Exemption/Expedited/Full board)</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch4</span>Vulnerable Groups (p19–45)</h2>
+<ul><li>นิยาม: ICH GCP (ถูกชักจูงง่ายเพราะหวังประโยชน์/กลัวผู้มีอำนาจ) · CIOMS 2016 · NBAC · Declaration of Helsinki · UNESCO</li>
+<li>เปราะบาง vs ไม่เปราะบาง: ไม่เปราะบาง = <b>Capability</b> + <b>Autonomy</b></li>
+<li><b>45 CFR 46</b>: Subpart <b>A</b> ทั่วไป · <b>B</b> หญิงตั้งครรภ์/ทารกในครรภ์/แรกเกิด · <b>C</b> นักโทษ · <b>D</b> เด็ก</li>
+<li><b>NBAC 2001 (6)</b>: Cognitive/Communicative · Institutional (ทหารเกณฑ์ นักโทษ) · <b>Deferential</b> (เกรงใจผู้มีสถานะสูงกว่า: นักศึกษา-อาจารย์, ผู้ป่วย-แพทย์) · Medical · Economic · Social</li>
+<li>สังคมศาสตร์: ร่างกาย · จิตใจ · สังคม · เศรษฐกิจ</li>
+<li>ไม่รู้หนังสือ/ตาบอด: ลายนิ้วมือหรือ verbal consent + <b>พยานเป็นกลาง 1 คน</b></li>
+<li>ผู้ใต้บังคับบัญชา: ให้ <b>บุคคลที่ 3</b> ชี้แจงแทนเพื่อลดอิทธิพล</li></ul>
+</section>
+
+<section class="c"><h2><span class="ch">Ch4</span>Belmont Report 3 หลัก (p47–64)</h2>
+<table><tr><th>หลัก</th><th>สาระ</th></tr>
+<tr><td><b>Respect for Persons</b></td><td>Autonomy + Protection of Vulnerable · Informed Consent · Voluntary Participation (ถอนตัวได้ตลอด) · Privacy &amp; Confidentiality (coding แทนชื่อ) · Consent (ผู้แทน) + <b>Assent</b> (ฟังเสียงเด็ก)</td></tr>
+<tr><td><b>Beneficence</b></td><td>ประโยชน์สูงสุด ความเสี่ยงต่ำสุด ชั่งน้ำหนัก risk/benefit · ใช้เฉพาะคำถามจำเป็น · <span class="t">ประโยชน์ ≠ เงิน/ของขวัญ</span></td></tr>
+<tr><td><b>Justice</b></td><td>เลือกอาสาสมัครเท่าเทียม ไม่เจาะกลุ่มเปราะบางเพื่อความสะดวก · <b>Distributive</b> (แบ่งประโยชน์/ภาระ) · <b>Procedural</b> (กติกาโปร่งใสเหมือนกัน) · <b>Retributive/Corrective</b> (เยียวยา/ลงโทษ)</td></tr></table>
+<p><b>Declaration of Helsinki</b>: 14 หลักเกณฑ์ (จำเป็น, ผู้วิจัยมีความรู้, ออกแบบดี, จำนวนคนเหมาะสม, เสี่ยงน้อยสุด, เอกสารชี้แจง, ใบยินยอมลายลักษณ์อักษร, ค่าตอบแทนไม่จูงใจ, ทดสอบในแล็บ/สัตว์ก่อน, ตาม GCP, ละเมิด→ปฏิเสธ) · <b>GCP</b>: มี <b>DSMB</b>, ยุติโครงการเมื่อพบอันตรายร้ายแรง หรือ Interim Analysis พบยาได้ผลชัดเจน</p>
+<p><b>9 ข้อควรทราบ</b>ก่อนวิจัย: รู้จรรยาบรรณ, ผ่านกรรมการก่อน, ขอในพื้นที่ด้วย, แจ้งอันตราย, ให้ข้อมูล+เวลา, ถอนตัวได้, รักษาความลับ, ยินยอมเป็นลายลักษณ์อักษร, ควบคุมคุณภาพ</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch4</span>Privacy, PDPA, Consent (p75–103)</h2>
+<ul><li><b>Privacy</b> = สิทธิจำกัดการเข้าถึงเรื่องส่วนตัว · ข้อมูลส่วนบุคคล = ระบุตัวได้ทั้งตรง/อ้อม (<span class="t">ไม่รวมผู้ถึงแก่กรรม</span>)</li>
+<li>Non-private: เลขที่บริษัท, อีเมล/เบอร์ที่ทำงาน, ข้อมูลแฝง (anonymized), ข้อมูลผู้เสียชีวิต</li>
+<li><b>Sensitive</b>: เชื้อชาติ, ความเห็นทางการเมือง, พันธุกรรม, พฤติกรรมทางเพศ, ประวัติอาชญากรรม, สุขภาพ/พิการ, ศาสนา/ปรัชญา</li>
+<li><b>Confidentiality</b> = กระบวนการปกป้อง privacy · <b>Breach</b> = เปิดเผยโดยไม่ได้รับอนุญาต</li>
+<li><b>PDPA</b>: บังคับใช้ <b>1 มิ.ย. 2565</b>, ต้นแบบ <b>GDPR</b> (EU) · ใช้ข้อมูลน้อยที่สุด · Data Subject / <b>Data Controller</b> (ตัดสินใจว่าประมวลผลอะไร) / Consent</li>
+<li>สิทธิ: เข้าถึง · ลบ/ทำลาย · คัดค้าน · ถอนความยินยอม</li>
+<li>โทษ: แพ่ง ค่าเสียหาย + ไม่เกิน <b>2 เท่า</b> · อาญา จำคุก <b>1 ปี</b>/ปรับ <b>1 ล้าน</b> · ปกครอง ปรับ <b>5 ล้าน</b></li>
+<li>ผิด PDPA: CC แทน BCC, CCTV ส่องบ้านคนอื่น, แชร์ข้อมูลข้ามบริษัทในเครือ, เก็บเกินจำเป็น ฯลฯ</li></ul>
+<h3>Consent</h3>
+<ul><li>Process: Information Sheet → Consent Form → สื่อสาร+ให้เวลา → ลงนาม (Written)</li>
+<li><b>Consent by Action</b> (UX): ยินยอมด้วยการกระทำ (ส่งแบบสอบถามคืน/ทำกิจกรรมต่อ), ความเสี่ยงต่ำมาก, <span class="t">ห้ามเก็บ identifier</span></li>
+<li>อายุ: &lt;7 ผู้ปกครองเซ็น · 7–12 <b>Assent form</b> ภาษาเด็ก + ผู้ปกครอง · 13–17 เอกสารผู้ใหญ่ เด็ก assent + ผู้ปกครอง · ≥18/20 ผู้ใหญ่เซ็นเอง</li>
+<li><b>Waive Consent</b>: ยกเว้นการขอ ต้องผ่านกรรมการเสมอ (เช่น สังเกตการทิ้งขยะที่สถานีรถไฟฟ้า)</li></ul>
+</section>
+
+<section class="c"><h2><span class="ch">Ch5</span>Nielsen's 10 Usability Heuristics (p2–21)</h2>
+<ol><li><b>Visibility of System Status</b>: loading %, ✓ บันทึกสำเร็จ, สถานะคำสั่งซื้อ</li>
+<li><b>Match Between System &amp; Real World</b>: ภาษาคุ้นเคย, Bin icon</li>
+<li><b>User Control &amp; Freedom</b>: Undo, Unsend, ปุ่ม X</li>
+<li><b>Consistency &amp; Standards</b>: ปุ่ม/คำเดียวกันทุกหน้า</li>
+<li><b>Error Prevention</b>: ปุ่มเทาเมื่อข้อมูลไม่ครบ, "แน่ใจหรือไม่ที่จะลบ?"</li>
+<li><b>Recognition Rather Than Recall</b>: search suggestion</li>
+<li><b>Flexibility &amp; Efficiency of Use</b>: shortcut Ctrl+C/V (มือใหม่+มืออาชีพ)</li>
+<li><b>Aesthetic &amp; Minimalist Design</b>: ตัดของไม่จำเป็น (ไม่ใช่แค่สวย)</li>
+<li><b>Help Users Recognize, Diagnose &amp; Recover from Errors</b></li>
+<li><b>Help &amp; Documentation</b>: FAQ</li></ol>
+<p class="t">#5 ป้องกันก่อนเกิด vs #9 ช่วยหลังเกิด · #6 search suggestion vs #7 shortcut</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch5</span>Usability Test Design Process (p22–59)</h2>
+<ol><li><b>Define Problem</b>: pain point/ปัญหาที่แท้จริง</li><li><b>Objective &amp; Hypothesis</b>: วัตถุประสงค์ = จะทำอะไร · สมมุติฐาน = คาดเดาผล</li><li><b>Clarify user &amp; sample group</b>: persona, ขนาด/วิธีเลือก/จำนวน, อธิบายเหตุผล</li><li><b>Experimental Design</b>: หาเหตุ-ผลระหว่างตัวแปร ควบคุมปัจจัยแทรกซ้อน</li></ol>
+<ul><li>กลุ่มตัวอย่างที่ดี: <b>Representativeness · Adequate size · Reliable</b></li>
+<li>Task: <b>non-leading</b> + <b>binary outcome</b> (สำเร็จ/ไม่สำเร็จ) · Scenario ให้อิน</li>
+<li>มี <b>trial</b> ก่อน (ห้ามใช้คำถามจริง) · สุ่มลำดับคำถาม · ถามคล้ายเดิม 3–5 ครั้ง · พักได้ · consent (ถ่ายรูปต้องขอ+อัดคลิป consent) · สรุปยอมรับ/ปฏิเสธสมมุติฐาน</li>
+<li>เก็บข้อมูล: System Testing/Experiment · Questionnaire (คนเยอะ, primary data) · Interviews · <b>Focus group (6–10 คน)</b> · Observation (เร็วสุด, สถานการณ์เล็ก)</li>
+<li><b>Qualitative</b>: Nominal (เรียงไม่ได้: เพศ สี) · Ordinal (เรียงได้: S M L) · <b>Quantitative</b>: Discrete (นับ) · Continuous (วัด: น้ำหนัก)</li></ul>
+</section>
+
+<section class="c"><h2><span class="ch">Ch5</span>Laws → การวัดผล, A/B, Flows</h2>
+<table><tr><th>Law</th><th>วัด/ทดสอบอะไร</th></tr>
+<tr><td>Hick's</td><td>Time on Task, Hesitation/accuracy, Task Success Rate (A vs B) · Reduce choices, Stepped process, เน้น CTA</td></tr>
+<tr><td>Fitts's</td><td>Task Time, Error Rate, Observation · Size, Location, Distance · A/B, Thumb zone, Heatmap &amp; Click Tracking</td></tr>
+<tr><td>Miller's</td><td>Cognitive load, memorability (What you see / remember), Chunk 7±2</td></tr>
+<tr><td>Jakob's</td><td>Mental model, Familiarity, Expectation, Reduce Friction, <b>Benchmark Comparison</b> (new vs existing)</td></tr>
+<tr><td>Parkinson's</td><td>Time &amp; Effort, Task Time &amp; Accuracy</td></tr>
+<tr><td>Tesler's</td><td>Complexity → Make it Simple</td></tr></table>
+<p><b>A/B Testing</b>: A = <b>control</b> (เดิม) · B = <b>variation</b> (เปลี่ยน <span class="t">1 ตัวแปร</span>) · สุ่มให้เห็น</p>
+<p><b>Mapping the Flows</b>: <b>Happy path</b> (ทุกอย่างถูกต้อง) vs <b>Unhappy path</b> (error: รหัสผิด เน็ตหลุด เซิร์ฟเวอร์ล่ม) · ทุกระบบต้องมีทั้งคู่ · ทำ happy ให้ครบก่อน · จัดลำดับ unhappy ตามความถี่/% ผู้ได้รับผลกระทบ/ผลกระทบ/resource</p>
+<p><b>User Story</b>: ความต้องการสั้น ๆ จากมุมผู้ใช้ (ระบบซับซ้อนทำก่อน mapping flows) · <b>End-to-End Workflow</b>: start→end เชื่อมทุกส่วนไร้รอยต่อ</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch8</span>Wireframe (p2–20)</h2>
+<ul><li>= <b>พิมพ์เขียว</b>โครงหน้าจอ เน้น layout + UX ไม่มีสี/ฟอนต์จริง · <span class="t">ต้องมีมากกว่า 1 version</span></li></ul>
+<table><tr><th></th><th>Low-Fi</th><th>Mid-Fi</th><th>High-Fi</th></tr>
+<tr><td>รูปแบบ</td><td>วาดมือ/โครงหยาบ</td><td>ดิจิทัล ขาว-ดำ-เทา layout แม่น</td><td>เสมือนจริง สี แบรนด์ ฟอนต์</td></tr>
+<tr><td>เน้น</td><td>โครงสร้างไอเดีย</td><td>ความชัดของปุ่ม/ฟังก์ชัน</td><td>ความสวย UX interaction</td></tr>
+<tr><td>ทดสอบ</td><td>แนวคิด/flow</td><td>usability</td><td>ความรู้สึก (UX) + ส่ง dev</td></tr>
+<tr><td>ความเร็ว</td><td>เร็วสุด</td><td>ปานกลาง</td><td>ช้าสุด</td></tr></table>
+<ul><li><b>4 Factors เลือก tool</b>: Project Type &amp; Goals · Cost · Tool Capabilities · Learnability &amp; Ease of use</li>
+<li><b>Core Elements</b>: Layout &amp; Grid (Header/Nav, Footer, Content Blocks, Sidebar) · Information Architecture (Headings/Typography scale, Placeholder text Lorem Ipsum, Image placeholder ☒) · UI Elements (Buttons/CTA, Forms, Icons)</li>
+<li><b>6 Steps</b>: Research &amp; requirements → IA &amp; content inventory → User flow mapping → Initial sketching → Digital wireframes → Documentation &amp; developer handoff</li>
+<li>Process = Design Thinking: Empathize · Define · Ideate · Prototype · Test · Implement</li>
+<li>ก่อนทำ: <b>User · Context · Content</b> (Google Maps: ใช้ตอนขับรถ → ปุ่มใหญ่ สั่งเสียงได้)</li></ul>
+</section>
+
+<section class="c"><h2><span class="ch">Ch8</span>Prototype, Mockup, Visual Hierarchy (p21–55)</h2>
+<ul><li><b>Prototype</b> = จำลองที่คลิก/โต้ตอบได้ ทดสอบ UX ก่อนเขียนโค้ด · ลำดับ <b>Sketch → Wireframe → Mockup → Prototype</b></li>
+<li><b>Mockup</b> = ภาพเสมือนจริง สวย มีสี แต่ <span class="t">กดไม่ได้/แค่ demo</span></li>
+<li>Prototype 7 ประเภท (p22): Low-Fi, High-Fi, Interactive, Paper, Digital, Vertical, Horizontal</li></ul>
+<table><tr><th></th><th>Vertical</th><th>Horizontal</th></tr>
+<tr><td>Scope</td><td>แคบ ฟีเจอร์เดียว</td><td>กว้าง ทุกหน้าจอ</td></tr>
+<tr><td>Depth</td><td>ทำงานจริง ต่อ DB/backend</td><td>คลิกดูได้ แต่ไม่ประมวลผล</td></tr>
+<tr><td>เพื่อ/ผู้ใช้</td><td>usability, feasibility / Developers</td><td>UX UI / users, designers</td></tr>
+<tr><td>อุปมา</td><td>ห้องน้ำห้องเดียวใช้ได้จริง</td><td>บ้านจำลองครบทุกห้อง เปิดไฟไม่ได้</td></tr></table>
+<p><b>Paper</b> (เป็น Lo-Fi ชนิดหนึ่ง, ต้องทดสอบต่อหน้า, บันทึกการคลิกอัตโนมัติไม่ได้) vs <b>Low-Fi</b> (กระดาษหรือดิจิทัลคร่าว ๆ) · <b>Interactive</b> (คลิกได้ ≠ ภาพนิ่ง; เน้น behavior) vs <b>Digital</b> (บนซอฟต์แวร์ ≠ กระดาษ; low ถึง high)</p>
+<p><b>Visual Hierarchy 8</b>: Size · Color · Contrast · Alignment · Repetition · Proximity · Whitespace · Texture &amp; Style (+ Heading: Headline เด่นสุด → Subtitle → Supplementary) · เชื่อม Hick (choice), Miller (memory), Proximity (grouping), IA (process)</p>
+<p><b>Status Quo Bias</b> = อคติยึดติดสภาพเดิม (เชื่อม Hick's Law)</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch9</span>HEART &amp; Satisfaction Metrics (p2–18)</h2>
+<table><tr><th>HEART</th><th>วัด</th></tr>
+<tr><td><b>H</b>appiness</td><td>ความพึงพอใจ: แบบสอบถาม รีวิว NPS, CSAT</td></tr>
+<tr><td><b>E</b>ngagement</td><td>ความถี่/ระยะเวลาใช้ (session length, DAU/MAU)</td></tr>
+<tr><td><b>A</b>doption</td><td>ผู้ใช้ใหม่/อัตราใช้ฟีเจอร์ใหม่</td></tr>
+<tr><td><b>R</b>etention</td><td>กลับมาใช้ซ้ำ ลด <b>Churn Rate</b>, renewal</td></tr>
+<tr><td><b>T</b>ask Success</td><td>Task success rate, เวลา, error rate</td></tr></table>
+<p><b>GSM</b>: <b>Goals → Signals → Metrics</b> (ใช้กับ HEART ทุกมิติ)</p>
+<table><tr><th>Metric</th><th>สูตร/สเกล</th><th>ถาม</th></tr>
+<tr><td><b>CSAT</b></td><td>(# satisfied (4–5) / total) × 100 · Very good 80–89%, Excellent 90–100%</td><td>"Are you satisfied?" คุณภาพบริการ/สินค้าเฉพาะจุด</td></tr>
+<tr><td><b>NPS</b></td><td>% Promoters (9–10) − % Detractors (0–6) · Passive 7–8 · ช่วง −100…100 (−100–0 ต้องรีบพัฒนา, 0–30 ดี, 30–70 ดีมาก, 70–100 ยอดเยี่ยม)</td><td>"Would you recommend us?" <b>loyalty</b></td></tr>
+<tr><td><b>CES</b></td><td>Sum of responses / total · สเกล 1–7 (Extremely easy → Extremely difficult)</td><td>"How easy was it?" <b>effort</b></td></tr>
+<tr><td><b>FCR</b></td><td>(แก้ได้ในครั้งแรก − reopened) / total × 100 · Good 70–79%, World class 80–100%</td><td>First Call Resolution</td></tr></table>
+<p class="t">NPS: Passive ไม่ถูกนับในสูตร · ตัวอย่าง 75% − 5% = 70 (สินค้าดีมาก)</p>
+</section>
+
+<section class="c"><h2><span class="ch">Ch9</span>Statistics for UX (p19–65)</h2>
+<p>ทำไมต้องใช้สถิติ: ลดการตัดสินใจด้วยความรู้สึก, แก้ปัญหากลุ่มตัวอย่าง qualitative น้อย, เปลี่ยนความเห็นเป็นตัวเลข, น่าเชื่อถือ</p>
+<table><tr><th>เป้าหมาย</th><th>สถิติ</th><th>ใช้เมื่อ</th></tr>
+<tr><td rowspan="5">เปรียบเทียบค่าเฉลี่ย</td><td>One-sample t-test</td><td>1 กลุ่ม vs <b>ค่าเป้าหมาย</b> (≤60 วินาที) · df = n−1</td></tr>
+<tr><td>Independent t-test</td><td>2 กลุ่ม <b>คนละกลุ่ม</b> (layout A vs B, ชาย vs หญิง)</td></tr>
+<tr><td>Paired t-test</td><td><b>กลุ่มเดิม</b> วัด 2 ครั้ง (pre/post, ก่อน-หลังเทรน)</td></tr>
+<tr><td>ANOVA (F-test)</td><td><b>≥ 3 กลุ่ม</b> · One-way = 1 IV · Two-way = 2 IV (+ <b>Interaction effect</b>) · F &gt; F-critical → sig → ทำ <b>post-hoc</b> หาคู่ที่ต่าง</td></tr>
+<tr><td>Repeated Measures</td><td>กลุ่มเดิมหลายเงื่อนไข (ไอคอน 16/32/48/64) · ข้อดี ใช้คนน้อย คุมความต่างบุคคล · ข้อเสีย ล้า/ลาออก · partial η²</td></tr>
+<tr><td>ข้อมูลเชิงกลุ่ม</td><td>Chi-square</td><td>2 ตัวแปรกลุ่มสัมพันธ์กัน? observed vs expected (คลิก/ไม่คลิก × สีปุ่ม)</td></tr>
+<tr><td rowspan="2">หาความสัมพันธ์</td><td>Correlation</td><td>−1 ถึง +1 · <b>Pearson</b> (ปริมาณ, linear, outlier น้อย) · <b>Spearman</b> (อันดับ/ranking, ไม่ปกติ, outlier เยอะ)</td></tr>
+<tr><td>Regression</td><td><b>ทำนาย</b> · Linear = ค่าต่อเนื่อง · Logistic = 0–1 จำแนก ใช่/ไม่ใช่, ซื้อ/ไม่ซื้อ</td></tr></table>
+<p><b>p &lt; 0.05</b> → แตกต่างอย่างมีนัยสำคัญ (ปฏิเสธ H₀) · t ติดลบ = mean กลุ่มตัวอย่าง &lt; ค่ามาตรฐาน · One-tailed แนะนำเมื่ออยากรู้ว่า "เร็วกว่า"</p>
+<p>ผลตัวอย่าง: icon 48×48 vs 64×64 p = 0.198 (ไม่ต่าง) → เลือก <b>48×48</b> · Two-way: <b>concrete icon</b> เร็วกว่าเสมอ; abstract บนพื้นดำแย่สุด (4.30 s) · Chi-square: ปุ่มเขียว 32.5% vs แดง 17.5% → χ² = 12, p &lt; .001</p>
+</section>
+
+<section class="c"><h2>⚠️ สิ่งที่สไลด์ไม่มีรายละเอียด (ต้องรู้)</h2>
+<ul><li>Ch2 <b>Color Psychology</b> มีแค่ในแผนภาพ "Core" ไม่มีสไลด์อธิบาย</li>
+<li>Ch2 "5 Mental Models Types" สไลด์แสดงแค่ Type 1 (Thinking &amp; Decision Making)</li>
+<li>Ch2 Gestalt มีแค่รายชื่อ 5 กฎ ไม่มีตัวอย่างภาพ</li>
+<li>ไม่มีคลิปสอน ไม่มีข้อสอบเก่า → ข้อสอบจำลองอิงสไตล์มาตรฐาน MCQ</li></ul>
+</section>
+</main></body></html>
